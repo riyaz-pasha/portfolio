@@ -1,10 +1,11 @@
 "use client";
 import { motion } from 'framer-motion';
+import { SectionContainer } from './atoms/SectionContainer';
 import { HeroHighlight, Highlight } from './ui/HeroHighlight';
 
 const Hero = () => {
     return (
-        <div className="w-full h-screen">
+        <SectionContainer>
             <HeroHighlight>
                 <motion.h1
                     initial={{ opacity: 0, y: 20, }}
@@ -33,7 +34,7 @@ const Hero = () => {
                     </Highlight>
                 </motion.h1>
             </HeroHighlight>
-        </div>
+        </SectionContainer>
     )
 }
 

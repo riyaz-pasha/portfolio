@@ -12,6 +12,7 @@ export const Projects = () => {
                 {projects.map((project, index) => <ProjectCard
                     key={index}
                     title={project.name}
+                    img={project.img}
                     highlights={project.highlights}
                 />)}
             </div>

@@ -8,6 +8,7 @@ React
 type ProjectCardProps = {
     key: number | string
     title: string
+    img: string
     highlights: string[]
 }
 
@@ -15,7 +16,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
     return (
         <Card>
             <div className="relative flex items-center justify-center overflow-hidden h-[30vh]">
-                <Image fill src="/p1.svg" alt="bgimg" />
+                <Image fill src={props.img} alt="/p1.svg" />
             </div>
 
             <Heading>{props.title}</Heading>

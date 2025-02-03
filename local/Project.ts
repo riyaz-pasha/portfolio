@@ -25,7 +25,8 @@ export const projects: Project[] = [
             "Led a development stream, coordinating with team members to ensure successful delivery.",
             "Owned 2 Major Business flows and implemented by myself.",
             "Collaborated closely with clients, adhering to Agile and XP practices such as Pair Programming, Clean Code, Refactoring, Stand-ups, Retrospectives and Feedback.",
-        ]
+        ],
+        img: "/mobilePaymentsApp.jpg"
     },
     {
         name: "Legacy modernization of Pricing Application",
@@ -54,7 +55,8 @@ export const projects: Project[] = [
             "Improved sonar code quality and added more UNIT and INTEGRATION tests over Legacy service.",
             "Conducted onboarding sessions and knowledge-sharing sessions for new team members.",
             "Did spikes on Webflux and It’s libraries, shared learnings with the team members.",
-        ]
+        ],
+        img: "/retailApp.jpg"
     },
     {
         name: "Source control management system with Stacked Diffs approach",
@@ -80,7 +82,8 @@ export const projects: Project[] = [
         highlights: [
             "Took ownership of the Command Line Interface (CLI) team and successfully developed Phase 1 features.",
             "Learned internals of GIT and proposed a couple of solutions to implement Stacks and Diffs on top of git and finalized one solution.",
-        ]
+        ],
+        img: "/gitApp.jpg"
     },
     {
         name: "Legacy Modernization: Data Exchange Between University Applications",
@@ -106,7 +109,8 @@ export const projects: Project[] = [
             "Transitioned clients from a SOAP-based architecture to REST.",
             "Migrated the authentication mechanism from API keys to Auth0.",
             "Optimized Jenkins build time, reducing it from 25+ minutes to 12 minutes.",
-        ]
+        ],
+        img: "/collegeManagementApp.jpg"
     },
     {
         name: "Residential and Office property Application",
@@ -129,7 +133,8 @@ export const projects: Project[] = [
         highlights: [
             "Enhanced the application by onboarding office users to the platform.",
             "Increased test coverage by adding comprehensive UNIT tests.",
-        ]
+        ],
+        img: "/propertyManagementApp.jpg"
     },
     {
         name: "Jobs Portal",
@@ -158,6 +163,7 @@ export const projects: Project[] = [
             "Built a platform for Hiring Consultants to shortlist profiles based on job requirements and forward them to Hiring Company Recruiters.",
             "Designed features for Hiring Company Recruiters to manage shortlisted candidates, including scheduling interviews and making decisions.",
             "Developed end-to-end tests for the application using Playwright.",
-        ]
+        ],
+        img: "/jobApp.jpg"
     },
 ] satisfies Project[]

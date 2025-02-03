@@ -6,6 +6,7 @@ import { Heading } from "../atoms/Heading";
 
 React
 type ProjectCardProps = {
+    id: number | string
     key: number | string
     title: string
     img: string
@@ -14,7 +15,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = (props: ProjectCardProps) => {
     return (
-        <Card>
+        <Card key={props.id}>
             <div className="relative flex items-center justify-center overflow-hidden h-[30vh]">
                 <Image fill src={props.img} alt="/p1.svg" />
             </div>

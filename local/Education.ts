@@ -14,7 +14,8 @@ export const educationDetails: Education[] = [
             end: {
                 month: 5,
                 year: 2019
-            }
+            },
+            isOngoing: false
         }
     },
     {
@@ -30,7 +31,25 @@ export const educationDetails: Education[] = [
             end: {
                 month: 5,
                 year: 2015
-            }
+            },
+            isOngoing: false
+        }
+    },
+    {
+        institutionName: "Navodaya Model High School",
+        course: "SSC",
+        specification: "",
+        cgpa: 9.8,
+        duration: {
+            start: {
+                month: 6,
+                year: 2003
+            },
+            end: {
+                month: 4,
+                year: 2013
+            },
+            isOngoing: false
         }
     },
 ] satisfies Education[]

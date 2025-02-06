@@ -10,7 +10,7 @@ export const Heading = (props: HeadingProps) => {
     return (
         <h3
             className={cn(
-                "text-lg font-semibold text-gray-800 dark:text-white py-2",
+                "text-lg font-semibold py-2",
                 props.className
             )}
         >

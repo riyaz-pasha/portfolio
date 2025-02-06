@@ -30,19 +30,18 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
 
-        primaryBackground: '#000000',
-        primary: '#3490dc',       // Primary color (e.g., blue)
+        primaryBackground: '#ffffff',
+        secondaryBackground: '#f0f0f0',
+        primary: '#6c63ff',       // Primary color (e.g., blue)
         secondary: '#ffed4a',     // Secondary color (e.g., yellow)
-        secondaryBackground: '#f7fafc', // Secondary background (e.g., light gray)
         success: '#38c172',       // Success color (e.g., green)
         failure: '#e3342f',       // Failure color (e.g., red)
 
-        // primary: "var(--primary)",
-        // secondary: "var(--secondary)",
-        // primaryBackground: "var(--primaryBackground)",
-        // secondaryBackground: "var(--secondaryBackground)",
-        // success: "var(--success)",
-        // failure: "var(--failure)",
+        primaryText: '#000000',
+        secondaryText: "#343a40",
+      },
+      boxShadow: {
+        neumorphic: "20px 20px 60px #f0f0f0, -20px -20px 60px #ffffff",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

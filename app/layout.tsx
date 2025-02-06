@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Merriweather_Sans, Mulish } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const mulish = Mulish({
+  subsets: ['latin'],
+  variable: "--font-mulish",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const merriweather = Merriweather_Sans({
+  subsets: ['latin'],
+  variable: "--font-merriweather-sans",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${mulish.variable} ${merriweather.variable} antialiased`}
       >
         {children}
       </body>

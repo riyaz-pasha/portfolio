@@ -11,7 +11,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20, }}
                     animate={{ opacity: 1, y: [20, -5, 0], }}
                     transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], }}
-                    className="text-2xl px-4 font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-start mx-auto"
+                    className="text-2xl px-4 font-bold  max-w-4xl leading-relaxed lg:leading-snug text-start mx-auto"
                 >
                     Hi,
                 </motion.h1>
@@ -19,7 +19,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20, }}
                     animate={{ opacity: 1, y: [20, -5, 0], }}
                     transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], }}
-                    className="text-3xl px-4 font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-start mx-auto"
+                    className="text-3xl px-4 font-bold max-w-4xl leading-relaxed lg:leading-snug text-start mx-auto"
                 >
                     I&apos;m Riyaz Pasha Mohammed
                 </motion.h1>
@@ -27,7 +27,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20, }}
                     animate={{ opacity: 1, y: [20, -5, 0], }}
                     transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], }}
-                    className="text-3xl px-4 font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-start mx-auto"
+                    className="text-3xl px-4 font-bold max-w-4xl leading-relaxed lg:leading-snug text-start mx-auto"
                 >
                     <Highlight className="text-black dark:text-white">
                         Full Stack Engineer

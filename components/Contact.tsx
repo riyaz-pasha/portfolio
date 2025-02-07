@@ -21,7 +21,7 @@ export const Contact = () => {
 
 
     return (
-        <SectionContainer id="Contact">
+        <SectionContainer id="contact">
             <SectionHeader>
                 Get in Touch
             </SectionHeader>

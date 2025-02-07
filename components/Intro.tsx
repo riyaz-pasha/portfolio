@@ -5,7 +5,7 @@ import { SectionContainer } from './atoms/SectionContainer'
 import { cn } from '@/lib/utils'
 
 export const Intro = () => {
-    return (<SectionContainer id='Home'>
+    return (<SectionContainer id='intro'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             <div className='p-4 content-center'>
                 <p className='text-2xl'>Hi,</p>

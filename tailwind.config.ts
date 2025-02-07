@@ -31,7 +31,7 @@ export default {
         foreground: "var(--foreground)",
 
         primaryBackground: '#ffffff',
-        secondaryBackground: '#f0f0f0',
+        secondaryBackground: '#f2f2f2',
         primary: '#6c63ff',       // Primary color (e.g., blue)
         secondary: '#ffed4a',     // Secondary color (e.g., yellow)
         success: '#38c172',       // Success color (e.g., green)

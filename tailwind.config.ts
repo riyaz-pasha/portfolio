@@ -30,8 +30,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
 
-        primaryBackground: '#ffffff',
-        secondaryBackground: '#f2f2f2',
+        primaryBackground: '#eef0f5', // 'rgba(238,240,245,1)',
+        secondaryBackground: '#e1e3e7',
         primary: '#6c63ff',       // Primary color (e.g., blue)
         secondary: '#ffed4a',     // Secondary color (e.g., yellow)
         success: '#38c172',       // Success color (e.g., green)
@@ -41,7 +41,7 @@ export default {
         secondaryText: "#343a40",
       },
       boxShadow: {
-        neumorphic: "20px 20px 60px #f0f0f0, -20px -20px 60px #ffffff",
+        // neumorphic: "20px 20px 60px #f0f0f0, -20px -20px 60px #ffffff",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

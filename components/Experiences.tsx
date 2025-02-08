@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import { educationDetails } from '@/local/Education'
 import { workExperiences } from '@/local/WorkExperience'
 import { SectionContainer } from './atoms/SectionContainer'
@@ -27,11 +28,15 @@ export const Experiences = () => {
                                         {detail.organization.name}
                                     </p>
                                     <p className='font-medium italic'>{detail.role}</p>
-                                    <div className=''>
+                                    <div className='mt-1'>
                                         {
                                             detail.competencies.map(s => {
                                                 return <span key={s}
-                                                    className="inline-flex me-1 mt-1 items-center rounded-md bg-secondaryBackground px-2 py-1 text-xs font-medium">
+                                                    className={cn(
+                                                        "inline-flex me-1 mt-1 items-center rounded-md",
+                                                        "bg-secondaryBackground px-2 py-1 text-xs font-medium",
+                                                        "neumorphic-light",
+                                                    )}>
                                                     {s}
                                                 </span>
                                             })
@@ -64,7 +69,11 @@ export const Experiences = () => {
                                     <p className='font-medium italic'>{detail.course}</p>
                                     <p className='font-medium'>{detail.specification}</p>
                                     <span
-                                        className="inline-flex me-1 mt-1 items-center rounded-md bg-secondaryBackground px-2 py-1 text-xs font-medium">
+                                        className={cn(
+                                            "inline-flex me-1 mt-1 items-center rounded-md",
+                                            "bg-secondaryBackground px-2 py-1 text-xs font-medium",
+                                            "neumorphic-light",
+                                        )}>
                                         {detail.cgpa}
                                     </span>
                                 </TimelineItem>

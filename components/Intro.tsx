@@ -1,10 +1,22 @@
-"use client"
-import Image from 'next/image'
-import { PrimaryButton } from './atoms/PrimaryButton'
-import { SectionContainer } from './atoms/SectionContainer'
-import { cn } from '@/lib/utils'
+"use client";
+import { useClipboard } from '@/hooks/useClipboard';
+import { email } from '@/local/Contact';
+import Image from 'next/image';
+import { useState } from 'react';
+import { PrimaryButton } from './atoms/PrimaryButton';
+import { SecondaryButton } from './atoms/SecondaryButton';
+import { SectionContainer } from './atoms/SectionContainer';
 
 export const Intro = () => {
+
+    const [downloaded, setDownloaded] = useState(false);
+    const { copied, handleCopy } = useClipboard(email);
+
+    const onDownload = () => {
+        setDownloaded(true);
+        setTimeout(() => setDownloaded(false), 1000);
+    }
+
     return (<SectionContainer id='intro'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             <div className='p-4 content-center'>
@@ -15,27 +27,34 @@ export const Intro = () => {
                 <p className='mt-4'>Software Engineer with experience in designing, developing and modernizing web and mobile applications.</p>
 
                 <div className='mt-4 grid gap-4'>
-                    <button className={
-                        cn(
-                            "min-w-60",
-                            "flex place-items-center place-content-center",
-                            "px-8 py-2",
-                            "rounded-md",
-                            "text-center",
-                            "font-semibold",
-                            "gap-1",
-                            "bg-secondaryBackground text-secondaryText",
-                        )}
-                    > Download Resume</button>
-                    <PrimaryButton
-                        prefixIcon={<Image
-                            src={"/clipboard.svg"}
-                            alt={''}
-                            width={24}
-                            height={24}
-                        />}
-                        text='Copy email address'
-                        onClick={() => ''} />
+                    <a
+                        href={"/Riyaz_Resume.pdf"}
+                        download={"Riyaz_Resume.pdf"}
+                    >
+                        <SecondaryButton
+                            text='Download Resume'
+                            prefixIcon={<Image
+                                src={downloaded ? "/tick-dark.svg" : "/download.svg"}
+                                alt={''}
+                                width={18}
+                                height={18}
+                            />}
+                            onClick={onDownload}
+                        >
+
+                        </SecondaryButton>
+                    </a>
+                    <div>
+                        <PrimaryButton
+                            prefixIcon={<Image
+                                src={copied ? "/tick.svg" : "/clipboard-white.svg"}
+                                alt={''}
+                                width={18}
+                                height={18}
+                            />}
+                            text='Copy email address'
+                            onClick={handleCopy} />
+                    </div>
                 </div>
             </div>
             <div className='col-span-2'>

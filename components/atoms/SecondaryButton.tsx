@@ -1,13 +1,14 @@
 import { cn } from '@/lib/utils';
+import React from 'react';
 
 type Props = {
     text: string;
     className?: string;
     onClick: () => void;
     prefixIcon?: React.ReactNode;
+    children?: React.ReactNode;
 }
-
-export const PrimaryButton = (props: Props) => {
+export const SecondaryButton = (props: Props) => {
     return (
         <button className={
             cn(
@@ -18,13 +19,15 @@ export const PrimaryButton = (props: Props) => {
                 "font-semibold",
                 "hover:font-bold",
                 "gap-1",
-                "bg-primary text-white",
-                "neumorphic-light",
+                "text-secondaryText",
+                "neumorphic",
+
                 props.className,
             )
         } onClick={props.onClick}>
             {props.prefixIcon}
             {props.text}
+            {props.children}
         </button >
     )
 }

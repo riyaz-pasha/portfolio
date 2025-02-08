@@ -1,4 +1,5 @@
 "use client";
+import { useClipboard } from '@/hooks/useClipboard';
 import { contactDetails, email, mobile } from '@/local/Contact';
 import Image from 'next/image';
 import { SectionContainer } from './atoms/SectionContainer';
@@ -7,18 +8,8 @@ import { LinkPreview } from './ui/LinkPreview';
 
 export const Contact = () => {
 
-    const textToCopy = email;
-
-    const handleCopy = async () => {
-        try {
-            await navigator.clipboard.writeText(textToCopy);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
-        } catch (err) {
-            console.error("Failed to copy:", err);
-        }
-    };
-
+    const { copied: isEmailCopied, handleCopy: copyEmail } = useClipboard(email);
+    const { copied: isMobileNumberCopied, handleCopy: copyMobileNumber } = useClipboard(mobile);
 
     return (
         <SectionContainer id="contact">
@@ -46,11 +37,11 @@ export const Contact = () => {
                         />
                         <p className='font-semibold'>Gmail:</p>
                         <button
-                            onClick={handleCopy}
+                            onClick={copyEmail}
                             className='flex gap-1 items-center'
                         >
                             <Image
-                                src={"/clipboard.svg"}
+                                src={isEmailCopied ? "/tick-dark.svg" : "/clipboard.svg"}
                                 alt={''}
                                 width={24}
                                 height={24}
@@ -67,11 +58,11 @@ export const Contact = () => {
                         />
                         <p className='font-semibold'>Mobile:</p>
                         <button
-                            onClick={handleCopy}
+                            onClick={copyMobileNumber}
                             className='flex gap-1 items-center'
                         >
                             <Image
-                                src={"/clipboard.svg"}
+                                src={isMobileNumberCopied ? "/tick-dark.svg" : "/clipboard.svg"}
                                 alt={''}
                                 width={24}
                                 height={24}

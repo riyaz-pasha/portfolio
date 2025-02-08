@@ -23,7 +23,7 @@ export function TimelineItem({ children }: { children: React.ReactNode; }) {
             <div className="w-3.5 h-3.5 my-1 bg-black rounded-full"></div>
         </div>
         <div className="w-11/12">
-            <Card>
+            <Card className="px-8 py-6">
                 {children}
             </Card>
         </div>

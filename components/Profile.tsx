@@ -1,7 +1,8 @@
+import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import { SectionContainer } from './atoms/SectionContainer'
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 import { SectionHeader } from './atoms/SectionHeader'
+import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 
 export const Profile = () => {
     return (
@@ -16,6 +17,10 @@ export const Profile = () => {
                         height={160}
                         alt={'Riyaz profile photo'}
                         style={{ borderRadius: '50%', }}
+                        className={cn(
+                            'rounded-full border-4 border-secondaryBackground',
+                            "neumorphic",
+                        )}
                     />
                 </BentoGridItem>
                 <BentoGridItem parentClass='col-span-3 justify-center border-none'>

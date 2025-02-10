@@ -7,14 +7,14 @@ import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 export const Profile = () => {
     return (
         <SectionContainer id="profile" className='content-center justify-center max-w-screen-lg'>
-            <SectionHeader className={"md:ms-12"}>About me</SectionHeader>
+            <SectionHeader className={""}>About me</SectionHeader>
 
             <BentoGrid className='mt-4'>
                 <BentoGridItem parentClass='items-center justify-center border-none'>
                     <Image
                         src={"/riyaz.png"}
-                        width={160}
-                        height={160}
+                        width={260}
+                        height={260}
                         alt={'Riyaz profile photo'}
                         style={{ borderRadius: '50%', }}
                         className={cn(
@@ -24,9 +24,13 @@ export const Profile = () => {
                     />
                 </BentoGridItem>
                 <BentoGridItem parentClass='md:col-span-3 justify-center border-none'>
-                    <p>Software Engineer with experience in designing, developing and modernizing web and mobile applications.
+                    <p className="leading-relaxed">
+                        I am a <span className="font-bold text-primary">Full-Stack Software Engineer</span> with <span className="font-semibold">5 years of experience</span> in designing, developing, and modernizing web and mobile applications.
                         <br /><br />
-                        Skilled in both frontend and backend development, with a focus on building scalable solutions and following Agile and XP practices.
+                        Proficient in <span className="font-bold">TypeScript, React, Node.js, Java, and AWS</span>,
+                        I specialize in <span className="font-semibold ">building scalable, high-performance applications</span> with a focus on <span className="font-semibold">cloud-based solutions and modern architectures</span> while following Agile and XP practices.
+                        <br /><br />
+                        Passionate about solving complex technical challenges, optimizing performance, and exploring emerging technologies to improve development workflows.
                     </p>
                 </BentoGridItem>
 

@@ -19,7 +19,7 @@ export const Intro = () => {
 
     return (<SectionContainer id='intro'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-            <div className='p-4 content-center'>
+            <div className='content-center'>
                 <p className='text-2xl'>Hi,</p>
                 <p className='font-bold text-4xl'>I&apos;m Riyaz</p>
                 <p className='mt-4 font-semibold text-xl'>Full Stack Engineer</p>
@@ -57,7 +57,7 @@ export const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-span-2'>
+            <div className='col-span-2 pt-8'>
                 <Image
                     src={"/home_hello.svg"}
                     // unoptimized

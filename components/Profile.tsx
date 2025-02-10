@@ -7,7 +7,7 @@ import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 export const Profile = () => {
     return (
         <SectionContainer id="profile" className='content-center justify-center max-w-screen-lg'>
-            <SectionHeader className={"ms-12"}>About me</SectionHeader>
+            <SectionHeader className={"md:ms-12"}>About me</SectionHeader>
 
             <BentoGrid className='mt-4'>
                 <BentoGridItem parentClass='items-center justify-center border-none'>
@@ -23,7 +23,7 @@ export const Profile = () => {
                         )}
                     />
                 </BentoGridItem>
-                <BentoGridItem parentClass='col-span-3 justify-center border-none'>
+                <BentoGridItem parentClass='md:col-span-3 justify-center border-none'>
                     <p>Software Engineer with experience in designing, developing and modernizing web and mobile applications.
                         <br /><br />
                         Skilled in both frontend and backend development, with a focus on building scalable solutions and following Agile and XP practices.

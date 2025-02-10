@@ -15,7 +15,7 @@ type ProjectCardProps = {
 export const ProjectCard = (props: ProjectCardProps) => {
     return (
         <Card className={"p-8"} key={props.id}>
-            <div className="relative flex items-center justify-center overflow-hidden h-[30vh]">
+            <div className="relative flex items-center justify-center overflow-hidden h-[30vh] rounded-lg">
                 <Image fill src={props.img} alt="/p1.svg" />
             </div>
 

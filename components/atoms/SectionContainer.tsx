@@ -11,7 +11,7 @@ export const SectionContainer = ({ id, children, className }: Props) => {
     return (
         <section id={id}
             className={cn(
-                "w-full min-h-screen max-w-screen-lg content-center justify-center",
+                "w-full min-h-screen max-w-screen-lg content-center justify-center p-8",
                 className
             )}
         >

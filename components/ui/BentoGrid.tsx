@@ -28,7 +28,7 @@ export const BentoGridItem = ({
 }) => {
     return (
         <div className={cn(
-            "relative overflow-hidden row-span-1 rounded-3xl group/bento bg-transparent border justify-between flex flex-col space-y-4 ",
+            "overflow-hidden row-span-1 rounded-3xl group/bento bg-transparent border justify-between flex flex-col space-y-4 ",
             parentClass
         )}>
             <div className={cn("p-6 group-hover/bento:translate-x-2 transition duration-200", className)}>
